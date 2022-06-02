@@ -1,0 +1,22 @@
+{
+  "name": "bowerside",
+  "version": "1.0.0",
+  "description": "BowersIDE, an IDE for libnds dev.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "Kenyon Bowers",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^4.1.1"
+  }
+}
