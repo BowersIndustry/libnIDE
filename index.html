@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <title>BowersIDE</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <textarea id="editor" rows="30"></textarea>
-    <input type="file" id="importFile" accept="text/plain">
-    <button id="save-btn">Save</button>
-    <button id="play-btn">Play</button>
-    <button id="compile-btn">Compile</button>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>libnIDE</title>
+</head>
+<body>
+    <input type="button" value="Open Project" id="open-btn" class="menu-btn"/>
+    <input type="button" value="New Project" id="new-btn" class="menu-btn"/>
+    <lable><input type="text" id="Project"/></lable>
 
     <script>
-      require('./renderer.js')
+        require("./src/menu/menu.js");
     </script>
-  </body>
+</body>
 </html>
