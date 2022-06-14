@@ -2,7 +2,6 @@ UPDATE:
 =======
 
 ### Since I haven't had a whole lot of time to spend on this and also some bugs I don't know how to fix, I am going to stop work on libnIDE. No, not permanently, but for a while. Just super busy with [DS Creator (Discord Server).](https://discord.com/invite/CqrXmqxAf8)
-.
 
 libnIDE
 =======
