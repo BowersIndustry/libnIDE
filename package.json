@@ -1,34 +1,17 @@
 {
   "name": "libnide",
   "version": "1.0.0",
-  "description": "ibnIDE, an IDE for libnds devs.",
-  "main": "main.js",
+  "description": "",
+  "main": "./main.js",
   "scripts": {
-    "start": "electron .",
-    "build-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=icons/icon.icns --prune=true --out=release-builds",
-    "build-win": "electron-packager . kyle-code --overwrite --asar=true --platform=win32 --arch=ia32 --icon=icons/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Kyle Code Maker\"",
-    "build-amd64": "electron-packager .  kyle-code --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/1024x1024.png --prune=true --out=release-builds",
-    "build-arm64": "electron-packager .  kyle-code --overwrite --asar=true --platform=linux --armv7l --icon=assets/icons/png/1024x1024.png --prune=true --out=release-builds",
-    "deb-arm64": "electron-installer-debian --src release-builds/kyle-code-linux-arm64/ --arch arm64 --config debian.json",
-    "deb-amd64": "electron-installer-debian --src release-builds/kyle-code-linux-x64/ --arch amd64 --config debian.json"
+    "start": "electron ."
   },
-  "repository": "",
-  "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
-  ],
   "author": "Kenyon Bowers",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^4.1.1"
+    "electron": "^19.0.4"
   },
   "dependencies": {
     "electron-packager": "^15.5.1"
-  },
-  "notShow": {
-    "electron-installer-debian": "^3.1.0"
   }
 }

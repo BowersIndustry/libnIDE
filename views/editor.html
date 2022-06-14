@@ -1,18 +1,93 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>libnIDE</title>
-    <link rel="stylesheet" href="../styles/style.css">
-  </head>
-  <body>
-    <textarea id="editor" rows="30"></textarea>
-    <button id="save-btn">Save</button>
-    <button id="play-btn">Play</button>
-    <button id="compile-btn">Compile</button>
 
-    <script>
-      require('../src/editor/render.js')
-    </script>
-  </body>
+<head>
+    <title>libnIDE</title>
+    <link rel="stylesheet" href="../styles/title.css">
+    <link rel="stylesheet" href="../styles/menu.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+
+    <script>if (typeof module === 'object') { window.module = module; module = undefined; }</script>
+    <script type='text/javascript' src="../src/jquery.min.js"></script>
+    <script type='text/javascript' src="../src/jquery.menu.js"></script>
+
+    <script type="text/javascript" src="../src/ace.js"></script>
+    <script type="text/javascript" src="../src/mode-javascript.js"></script>
+    <script type="text/javascript" src="../src/theme-twilight.js"></script>
+
+    <style type="text/css" media="screen">
+        #editor {
+            position: relative;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="codingScreen codingScreenStyles">
+
+            <div class="explorerContainer explorerContainerStyles">
+
+
+                <div class="filesContainer">
+
+                </div>
+
+                <div class="folderFiles">
+
+                    <div class="folderTitle">
+
+                        <div id="folderName">Folder</div>
+
+                        <button id="syncFiles">Refresh</button>
+                        <button id="changeFolder">Change</button>
+
+                    </div>
+
+                    <div class="exploredFilesContainer">
+
+
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="editorContainer">
+
+
+            </div>
+
+            <div class="widgetsContainer widgetsContainerStyles">
+
+                <div class="widgetsDrawer">
+                    <div class="widgetsHeader">
+                        <span>x</span>
+                    </div>
+
+                    <button id="stackOverflow"></button>
+                    <button id="fontAwesome"></button>
+                    <button id="github"></button>
+                    <button id="cdnjs"></button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script type='text/javascript' src="../src/codeslate.js"></script>
+
+    <script type="text/javascript" src="../src/shortcuts.js"></script>
+
+
+</body>
+
 </html>
