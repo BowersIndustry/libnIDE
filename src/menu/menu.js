@@ -23,8 +23,7 @@ newBtn.addEventListener('click', () => {
         if (err) { throw err; }
         localStorage.setItem("code", data);
     });
-    fs.copyFile(`${path.parse(path.parse(__dirname).dir).dir}/Makefile.dll`, `${path.parse(path.parse(localStorage.getItem("SRC")).dir).dir}/Makefile`, (err) => { if(err) { console.log(err) }});
-    location.href = "./editor.html";
+    fs.copyFile(`${path.parse(path.parse(__dirname).dir).dir}/Makefile.dll`, `${path.parse(path.parse(localStorage.getItem("SRC")).dir).dir}/Makefile`, (err) => { if(err) { console.log(err) } if(!err) { /*location.href = "../../views/editor.html";*/ }});
 });
 openBtn.addEventListener('click', () => {
     fs.readFile(projectInput.value, 'utf-8', (err, data) => {
@@ -36,8 +35,11 @@ openBtn.addEventListener('click', () => {
         file2 = localStorage.getItem("SRC");
         fs.readFile(file2, 'utf-8', (err, data) => {
             if (err) { confirm(err); }
-            localStorage.setItem("code", data);
-            location.href = "./editor.html";
+
+            if(!err){
+                localStorage.setItem("code", data);
+                location.href = "../../views/editor.html";
+            }
         });
     });
 });

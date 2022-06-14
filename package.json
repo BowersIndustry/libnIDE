@@ -26,7 +26,9 @@
     "electron": "^4.1.1"
   },
   "dependencies": {
-    "electron-installer-debian": "^3.1.0",
     "electron-packager": "^15.5.1"
+  },
+  "notShow": {
+    "electron-installer-debian": "^3.1.0"
   }
 }
