@@ -9,6 +9,7 @@
   "author": "Kenyon Bowers",
   "license": "MIT",
   "devDependencies": {
+    "@electron/remote": "^2.0.8",
     "electron": "^19.0.4"
   },
   "dependencies": {

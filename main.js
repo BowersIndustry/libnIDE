@@ -23,6 +23,8 @@ function createWindow () {
   }
   win.loadFile('./views/editor.html')
 
+  win.webContents.openDevTools()
+
   win.on('closed', () => {
     win = null
   })
